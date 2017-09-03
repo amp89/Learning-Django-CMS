@@ -149,8 +149,13 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'mb',
+    #'mppt', do i really need this... hmm
     'aldryn_style',#pip install aldryn_style
+    'aldryn_bootstrap3',#pip install aldryn_bootstrap3
 )
+
+
+
 
 LANGUAGES = (
     ## Customize this
@@ -209,3 +214,58 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+CKEDITOR_SETTINGS = {
+ # 'language': '{{ language }}',
+ # 'toolbar': 'CMS',
+ # 'skin': 'moono',
+ # 'toolbar_CMS': [
+ #  ['Undo', 'Redo'],
+ #  ['cmsplugins', '-', 'ShowBlocks'],
+ #  ['Format', 'Styles'],
+ #  ['TextColor', 'BGColor', '-', 'PasteText', 'PasteFromWord'],
+ #  ['Maximize', ''],
+ #  '/',
+ #  ['Bold', 'Italic', 'Underline', '-', 'Subscript', 'Superscript', '-', 'RemoveFormat'],
+ #  ['JustifyLeft', 'JustifyCenter', 'JustifyRight'],
+ #  ['Link', 'Unlink', 'Anchor'],
+ #  ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Table'],
+ #  ['Source']
+ # ],
+
+ # See: https://github.com/yakupadakli/django_blog/blob/master/ckeditor/ckeditor/styles.js
+ # for default style definitions.
+ 'stylesSet': [
+  {
+   'name': 'Page Header H1',
+   'element': 'h1',
+   'attributes': {
+    'class': 'page-header',
+   }
+  },
+  {
+   'name': 'Page Header H2',
+   'element': 'h2',
+   'attributes': {
+    'class': 'page-header',
+   }
+  },
+  {
+   'name': 'Page Header H3',
+   'element': 'h3',
+   'attributes': {
+    'class': 'page-header',
+   }
+  },
+  {
+   'name': 'Code',
+   'element': 'code',
+  },
+  {
+   'name': 'Code Block',
+   'element': 'pre',
+   'attributes': {
+    'class': 'code',
+   }
+  },
+ ]}
