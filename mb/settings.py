@@ -177,8 +177,8 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    #('sidebar_left.html', 'Sidebar Left'),#Turned off in tutorial
+    #('sidebar_right.html', 'Sidebar Right')#Turned off in tutorial
 )
 
 CMS_PERMISSION = True
@@ -198,7 +198,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (
