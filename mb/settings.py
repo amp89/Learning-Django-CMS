@@ -149,7 +149,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'mb',
-    'aldryn_style',
+    'aldryn_style',#pip install aldryn_style
 )
 
 LANGUAGES = (
